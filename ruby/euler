@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+abort "Usage: euler <problem number>" unless ARGV[0]
+
+number = ARGV[0].to_s.rjust(3, "0")
+file_name = "./problem_#{number}.rb"
+
+if File.exists? file_name
+  load file_name
+else
+  puts "There is no solution yet for problem #{number}"
+end
