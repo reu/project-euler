@@ -13,7 +13,7 @@
 (defn factors [n]
   (filter (partial divisible-by? n) (range 1 (Math/sqrt n))))
 
-(defn largest-prime [n]
+(defn largest-prime-factor [n]
   (reduce max (filter prime? (factors n))))
 
-(println (largest-prime 600851475143))
+(println (largest-prime-factor 600851475143))
