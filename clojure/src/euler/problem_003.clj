@@ -1,5 +1,5 @@
-(defn int-seq [n]
-  (cons n (lazy-seq (int-seq (inc n)))))
+(defn divisible-by? [number multiple]
+  (zero? (rem number multiple)))
 
 (defn prime? [n]
   (if (<= n 1)
@@ -8,10 +8,10 @@
       true
       (if (even? n)
         false
-        (not (some (fn [x] (zero? (mod n x))) (range 2 (- n 1))))))))
+        (not (some (partial divisible-by? n) (range 2 (- n 1))))))))
 
 (defn factors [n]
-  (filter #(zero? (rem n %)) (range 1 (Math/sqrt n))))
+  (filter (partial divisible-by? n) (range 1 (Math/sqrt n))))
 
 (defn largest-prime [n]
   (reduce max (filter prime? (factors n))))
