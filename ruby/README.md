@@ -4,7 +4,7 @@
 
 ## Usage
 
-`./run <problem number>`
+`./euler <problem number>`
 
 ## License
 
