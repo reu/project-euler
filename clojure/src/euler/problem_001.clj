@@ -5,7 +5,7 @@
 
 (defn multiples [limit]
   (filter
-    (fn [number] (or (multiple-of? 3 number) (multiple-of? 5 number)))
+    #(or (multiple-of? 3 %) (multiple-of? 5 %))
     (range limit)))
 
 (println (reduce + (multiples 1000)))
