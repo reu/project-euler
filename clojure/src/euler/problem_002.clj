@@ -1,4 +1,4 @@
-(def fib-seq
-  ((fn fib [a b] (lazy-seq (cons a (fib b (+ a b))))) 1 1))
+(ns euler
+  (:use [clojure.contrib.lazy-seqs :only (fibs)]))
 
-(print (reduce + (take-while #(< % 4000000) (filter even? fib-seq))))
+(println (reduce + (take-while #(< % 4000000) (filter even? (fibs)))))
