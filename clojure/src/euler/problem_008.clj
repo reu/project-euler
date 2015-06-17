@@ -1,4 +1,4 @@
-(ns euler
+(ns euler.problem-008
   (:use [clojure.java.io :only (resource)])
   (:require [clojure.string :as string]))
 

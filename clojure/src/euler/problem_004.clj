@@ -1,4 +1,4 @@
-(ns euler
+(ns euler.problem-004
   (:use [clojure.string :only (reverse) :rename {reverse reverse-string}]))
 
 (defn palindrome? [n]

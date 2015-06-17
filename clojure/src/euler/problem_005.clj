@@ -1,4 +1,4 @@
-(ns euler)
+(ns euler.problem-005)
 
 (defn greater-common-divisor [a b]
   (if (zero? b)

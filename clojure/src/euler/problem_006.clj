@@ -1,4 +1,4 @@
-(ns euler)
+(ns euler.problem-006)
 
 (defn square [n] (* n n))
 

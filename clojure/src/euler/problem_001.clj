@@ -1,4 +1,4 @@
-(ns euler)
+(ns euler.problem-001)
 
 (defn multiple-of? [multiple number]
   (zero? (rem number multiple)))

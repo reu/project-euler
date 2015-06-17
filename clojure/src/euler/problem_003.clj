@@ -1,4 +1,4 @@
-(ns euler
+(ns euler.problem-003
   (:use [clojure.contrib.lazy-seqs :only (primes)])
   (:use [clojure.contrib.math :only (sqrt)]))
 
