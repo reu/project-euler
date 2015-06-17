@@ -1,8 +1,9 @@
-(require '[clojure.string :as string])
+(ns euler
+  (:use [clojure.string :only (reverse) :rename {reverse reverse-string}]))
 
 (defn palindrome? [n]
   (let [a (str n)]
-    (= a (string/reverse a))))
+    (= a (reverse-string a))))
 
 (def three-digit-numbers
   (range 100 1000))

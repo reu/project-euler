@@ -1,3 +1,5 @@
+(ns euler)
+
 (defn greater-common-divisor [a b]
   (if (zero? b)
     a

@@ -1,3 +1,5 @@
+(ns euler)
+
 (defn square [n] (* n n))
 
 (defn sum [items] (reduce + items))

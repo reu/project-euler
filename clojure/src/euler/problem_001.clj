@@ -1,3 +1,5 @@
+(ns euler)
+
 (defn multiple-of? [multiple number]
   (zero? (rem number multiple)))
 
